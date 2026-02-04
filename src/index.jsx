@@ -5,6 +5,10 @@ import { Inbox } from "@novu/react";
 // Import the helper functions from our library files
 import { renderToaster } from "./main.jsx";
 import { renderInbox, clearInbox } from "./novu.jsx";
+import {
+	renderInboxWithProvider,
+	clearInboxWithProvider,
+} from "./novu-with-provider.jsx";
 
 // Default toast style (copied from main.jsx)
 const defaultToastStyle = {
@@ -85,6 +89,8 @@ if (typeof window !== "undefined") {
 			Inbox,
 			renderInbox,
 			clearInbox,
+			renderInboxWithProvider,
+			clearInboxWithProvider,
 		},
 	};
 
@@ -94,6 +100,8 @@ if (typeof window !== "undefined") {
 		Inbox,
 		renderInbox,
 		clearInbox,
+		renderInboxWithProvider,
+		clearInboxWithProvider,
 	};
 }
 
