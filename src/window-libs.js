@@ -16,7 +16,7 @@ const defaultToastStyle = {
   fontSize: "18px",
   fontWeight: "500",
   minWidth: "300px",
-  height: "48px",
+  height: "fit-content",
   display: "flex",
   alignItems: "center",
   gap: "16px",
